@@ -1,0 +1,109 @@
+*{
+	box-sizing:	border-box;
+}
+
+body{
+	background-color: #f5f8f5;
+	background-image: url(images/background-single.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	font-family: Roboto, sans-serif;
+}
+
+.site-content{
+	max-width: 1125px;
+	margin: 0 auto;
+}
+
+.hero{
+	padding: 120px 15px;
+	text-align: center;
+}
+
+.title, .subtitle{
+	display: block;
+}
+
+.hero .subtitle{
+	font-family: "Caveat";
+	font-size: 64px;
+	font-weight: lighter;
+}
+
+.hero .title{
+	font-family: "Playfair Display";
+	font-size: 72px;
+}
+
+.hero p{
+	max-width: 740px;
+	margin: 160px auto 0;
+	font-size: 18px;
+}
+
+.grid-layout{
+}
+
+.grid-layout:after{
+	content: " ";
+	clear: both;
+	display: block;
+}
+
+.grid-item{
+	width: 33.3333%;
+	float: left;
+	padding: 0 15px;
+}
+
+.grit-item-btn i{
+	font-size: 72px;
+}
+
+.map{
+	max-width: 100%;
+	position: relative;
+}
+
+.map img{
+	max-width: 100%;
+	margin: 0;
+}
+
+.map-button{
+	top: 100px;
+	text-align: center;
+	padding: -50% 15px 40px;
+}
+
+.map-button .a{
+	background-color: #22b8bf;
+}
+
+.map-button .b{
+	background-color: #329af0;
+}
+
+.map-button button{
+	top: -1000px;
+	width: 300px;
+	height: 50px;
+	border-radius: 45px;
+	outline: none;
+	border: 2px solid #f5f8f5;
+	font-size: 18px;
+	transition:border-color 300ms ease-out;
+	font-weight: lighter;
+	color: white;
+}
+
+.map-button button:focus{
+	border:2px solid #57adfe;
+}
+
+.footer{
+	text-align: center;
+	padding: 120px 15px 40px;
+	color: #535353;
+}
