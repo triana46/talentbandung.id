@@ -3,27 +3,27 @@ $(document).ready(function(){
    var daftarTaman = $('.daftar-taman');
    var filter      = $('#filter');
 
-   $.get('https://www.ariona.net/talentbandung/', function(data){
-      $.each( data, function(){
-         var html =  '<div class="grid-item"><article class="taman">'+
-                        '<figure>'+
-                           '<a href="single.html"><img src="'+this.image.thumbnail+'" alt=""/></a>'+
-                        '</figure>'+
-                        '<div class="taman-detail">'+
-                           '<h2>'+
-                              '<a href="single.html">'+
-                                 '<span class="subtitle">Taman</span>'+
-                                 '<span class="title">'+this.nama+'</span>'+
-                              '</a>'+
-                           '</h2>'+
-                           '<p>'+this.alamat+'</p>'+
-                        '</div>'+
-                     '</article></div>';
+   // $.get('https://www.ariona.net/talentbandung/', function(data){
+   //    $.each( data, function(){
+   //       var html =  '<div class="grid-item"><article class="taman">'+
+   //                      '<figure>'+
+   //                         '<a href="single.html"><img src="'+this.image.thumbnail+'" alt=""/></a>'+
+   //                      '</figure>'+
+   //                      '<div class="taman-detail">'+
+   //                         '<h2>'+
+   //                            '<a href="single.html">'+
+   //                               '<span class="subtitle">Taman</span>'+
+   //                               '<span class="title">'+this.nama+'</span>'+
+   //                            '</a>'+
+   //                         '</h2>'+
+   //                         '<p>'+this.alamat+'</p>'+
+   //                      '</div>'+
+   //                   '</article></div>';
          
-         daftarTaman.append(html);
+   //       daftarTaman.append(html);
    
-      } );
-   });
+   //    } );
+   // });
    
    filter.on('keyup', function(){
       var taman  = $(".grid-item");
